@@ -36,8 +36,8 @@ def func():
         else:
             flash('All the form fields are required. ')
 
-        score(sepallength, sepalwidth, petallength, petalwidth)
-
+        res = score(sepallength, sepalwidth, petallength, petalwidth)
+        flash(res)
 
     return render_template('Hello.html', form=form)
 

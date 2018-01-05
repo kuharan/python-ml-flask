@@ -62,7 +62,7 @@ def score(sepallength, sepalwidth, petallength, petalwidth):
   input1 = pandas.DataFrame([[sepallength, sepalwidth, petallength, petalwidth]])
   res = run(input1)
   print("Result: " + res)
-  
+  return res
   inputs = {"input_df": SampleDefinition(DataTypes.PANDAS, df)}
   
   #Genereate the schema
